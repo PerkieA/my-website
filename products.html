@@ -30,11 +30,13 @@
     .lang a.active{border-color:rgba(34,197,94,.6);color:var(--text)}
 
     .container{max-width:var(--max);margin:34px auto;padding:0 22px}
-    .card{background:var(--card);padding:22px;border-radius:12px;margin-bottom:16px}
+    .card{background:var(--card);padding:26px;border-radius:12px}
     .muted{color:var(--muted)}
-    .link{color:var(--accent);text-decoration:none}
-    .link:hover{text-decoration:underline}
     footer{margin-top:36px;padding:18px 22px;background:var(--header);color:var(--muted);text-align:center}
+
+    /* Simple section styling */
+    h1{margin:0 0 10px}
+    p{margin:0 0 12px}
 
     @media (max-width: 820px){
       header{position:static}
@@ -77,16 +79,22 @@
 <main class="container">
   <section class="card">
     <h1>Products</h1>
-    <p class="muted">This is the products hub. We can list products here, or link out to a dedicated product website.</p>
-  </section>
 
-  <section class="card">
-    <h2>Product Website</h2>
-    <p class="muted">
-      Open the product site:
-      <a class="link" href="#" target="_blank" rel="noopener">Open Product Website</a>
+    <p>
+      Mycological Solutions Ltd is currently sourcing and evaluating products related to fungi and applied mycology.
     </p>
-    <p class="muted">(Send me the product-site URL and I’ll connect it.)</p>
+
+    <p>
+      We are particularly interested in products that support environmental restoration, sustainable practices, and environmentally responsible technologies.
+    </p>
+
+    <p>
+      This may include tools, materials, and solutions connected to fungal research, environmental monitoring, ecological restoration, and other innovative uses of fungi.
+    </p>
+
+    <p class="muted">
+      If you develop or distribute products related to fungi and environmental solutions and would like us to consider distributing or representing your product, please get in touch.
+    </p>
   </section>
 </main>
 
