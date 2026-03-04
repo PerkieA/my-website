@@ -6,60 +6,176 @@
   <title>Mycological Solutions Ltd</title>
   <meta name="description" content="Mycological Solutions Ltd — practical fungal science for real-world problems.">
 
+  <link rel="icon" href="favicon.ico">
+
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#0f172a; color:#f1f5f9; }
-    header { padding:20px; text-align:center; background:#111827; }
+    :root{
+      --bg:#0f172a;
+      --header:#111827;
+      --card:#1e293b;
+      --text:#f1f5f9;
+      --muted:#94a3b8;
+      --accent:#22c55e;
+      --accentText:#052e16;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 
-    .logo { width:220px; height:auto; display:block; margin:0 auto 15px auto; }
+    /* Header */
+    header{background:var(--header);padding:14px 22px;position:sticky;top:0;z-index:10}
+    .header-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:14px;min-width:220px}
+    .logo{width:150px;height:auto;display:block}
+    .tagline-wrap{display:flex;flex-direction:column;gap:2px}
+    .company{font-weight:700;letter-spacing:.2px}
+    .tagline{color:var(--muted);font-size:13px}
 
-    nav a { margin:0 10px; color:#94a3b8; text-decoration:none; font-weight:500; }
-    nav a:hover { color:white; }
+    nav{display:flex;align-items:center;gap:0}
+    nav a{
+      position:relative;
+      margin-left:18px;
+      color:var(--muted);
+      text-decoration:none;
+      font-weight:600;
+      font-size:15px;
+      padding:8px 2px;
+    }
+    nav a:hover{color:var(--text)}
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:4px;
+      width:0;height:2px;
+      background:var(--accent);
+      transition:width .18s ease;
+    }
+    nav a:hover::after{width:100%}
 
-    .container { max-width:900px; margin:40px auto; padding:20px; }
-    .card { background:#1e293b; padding:20px; border-radius:10px; margin-bottom:20px; }
-    footer { text-align:center; padding:20px; background:#111827; color:#94a3b8; margin-top:40px; }
+    /* Language switch (links to other domain) */
+    .lang{
+      margin-left:18px;
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+    .lang a{
+      border:1px solid rgba(148,163,184,.35);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      text-decoration:none;
+      color:var(--muted);
+      margin-left:0;
+    }
+    .lang a.active{
+      border-color:rgba(34,197,94,.6);
+      color:var(--text);
+    }
 
-    .button {
-      display:inline-block; padding:10px 15px; background:#22c55e; color:#052e16;
-      border-radius:6px; text-decoration:none; font-weight:bold;
+    /* Main */
+    .container{max-width:var(--max);margin:34px auto;padding:0 22px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{background:var(--card);padding:22px;border-radius:12px}
+    .card.hero{grid-column:span 12}
+    .card.col4{grid-column:span 12}
+    .card.col6{grid-column:span 12}
+    h1,h2,h3{margin:0 0 10px}
+    p{margin:0 0 12px;color:var(--text)}
+    .muted{color:var(--muted)}
+    .button{
+      display:inline-block;
+      padding:10px 14px;
+      background:var(--accent);
+      color:var(--accentText);
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:800;
+    }
+
+    footer{margin-top:36px;padding:18px 22px;background:var(--header);color:var(--muted);text-align:center}
+
+    /* Mobile */
+    @media (min-width: 820px){
+      .card.col4{grid-column:span 4}
+      .card.col6{grid-column:span 6}
+    }
+    @media (max-width: 820px){
+      header{position:static}
+      .header-inner{flex-direction:column;align-items:flex-start}
+      nav{flex-wrap:wrap}
+      nav a{margin-left:0;margin-right:14px}
+      .lang{margin-left:0;margin-top:6px}
+      .brand{min-width:auto}
+      .logo{width:170px}
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Mycological Solutions Ltd" class="logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="logo.png" alt="Mycological Solutions Ltd logo" class="logo">
+      <div class="tagline-wrap">
+        <div class="company">Mycological Solutions Ltd</div>
+        <div class="tagline">Evidence-based mycology • Applied research • Practical solutions</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- Language switch -->
+      <span class="lang">
+        <a class="active" href="https://mycologicalsolutions.com" title="English site">EN</a>
+        <a href="https://mycologicalsolutions.hu" title="Hungarian site">HU</a>
+      </span>
+    </nav>
+  </div>
 </header>
 
-<div class="container">
-  <div class="card">
-    <h2>Welcome</h2>
-    <p>Evidence-based mycology for practical, real-world applications.</p>
-    <a class="button" href="contact.html">Contact Us</a>
-  </div>
+<main class="container">
+  <div class="grid">
+    <section class="card hero">
+      <h1>Welcome</h1>
+      <p class="muted">Practical fungal science for real-world applications.</p>
+      <p>Mycological Solutions Ltd supports projects at the intersection of mycology, laboratory practice, and product development.</p>
+      <a class="button" href="contact.html">Contact Us</a>
+    </section>
 
-  <div class="card">
-    <h2>About Us</h2>
-    <p>Learn about our laboratory work, research focus, and mission.</p>
-  </div>
+    <section class="card col4">
+      <h2>About</h2>
+      <p class="muted">Who we are and how we work. Links to lab/work portfolio.</p>
+    </section>
 
-  <div class="card">
-    <h2>Services</h2>
-    <p>Consulting, laboratory support, and applied mycology solutions.</p>
-  </div>
+    <section class="card col4">
+      <h2>Services</h2>
+      <p class="muted">Consulting, lab support, testing guidance, and R&amp;D.</p>
+    </section>
 
-  <div class="card">
-    <h2>Products</h2>
-    <p>Explore our current and upcoming product lines.</p>
+    <section class="card col4">
+      <h2>Products</h2>
+      <p class="muted">Explore offerings, or visit a dedicated product site.</p>
+    </section>
+
+    <section class="card col6">
+      <h2>What we do</h2>
+      <p class="muted">From idea → protocol → measurable results, with clear documentation and reproducible methods.</p>
+    </section>
+
+    <section class="card col6">
+      <h2>Get in touch</h2>
+      <p class="muted">Tell us what you’re trying to achieve and we’ll suggest next steps.</p>
+    </section>
   </div>
-</div>
+</main>
 
 <footer>
   © 2026 Mycological Solutions Ltd
