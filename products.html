@@ -1,65 +1,90 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Products — Mycological Solutions Ltd</title>
-  <link rel="icon" href="favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — Mycological Solutions Ltd</title>
 
-  <style>
-    :root{--bg:#0f172a;--header:#111827;--card:#1e293b;--text:#f1f5f9;--muted:#94a3b8;--accent:#22c55e;--max:1100px;}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+<style>
+:root{
+  --bg:#0f172a;
+  --header:#111827;
+  --card:#1e293b;
+  --text:#f1f5f9;
+  --muted:#94a3b8;
+  --accent:#22c55e;
+  --max:1100px;
+}
+*{box-sizing:border-box}
 
-    header{background:var(--header);padding:14px 22px;position:sticky;top:0;z-index:10}
-    .header-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .brand{display:flex;align-items:center;gap:14px;min-width:220px}
-    .logo{width:150px;height:auto;display:block}
-    .tagline-wrap{display:flex;flex-direction:column;gap:2px}
-    .company{font-weight:700;letter-spacing:.2px}
-    .tagline{color:var(--muted);font-size:13px}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
 
-    nav{display:flex;align-items:center}
-    nav a{position:relative;margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600;font-size:15px;padding:8px 2px}
-    nav a:hover{color:var(--text)}
-    nav a::after{content:"";position:absolute;left:0;bottom:4px;width:0;height:2px;background:var(--accent);transition:width .18s ease}
-    nav a:hover::after{width:100%}
+header{
+  background:var(--header);
+  padding:18px 22px;
+}
+.header-inner{
+  max-width:var(--max);
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{width:150px;height:auto;display:block}
 
-    .lang{margin-left:18px;display:flex;gap:8px;align-items:center}
-    .lang a{border:1px solid rgba(148,163,184,.35);padding:6px 10px;border-radius:999px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted);margin-left:0}
-    .lang a.active{border-color:rgba(34,197,94,.6);color:var(--text)}
+nav a{
+  margin-left:20px;
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+}
+nav a:hover{color:white}
 
-    .container{max-width:var(--max);margin:34px auto;padding:0 22px}
-    .card{background:var(--card);padding:26px;border-radius:12px}
-    .muted{color:var(--muted)}
-    footer{margin-top:36px;padding:18px 22px;background:var(--header);color:var(--muted);text-align:center}
+.container{
+  max-width:var(--max);
+  margin:40px auto;
+  padding:0 22px;
+}
 
-    /* Simple section styling */
-    h1{margin:0 0 10px}
-    p{margin:0 0 12px}
+.card{
+  background:var(--card);
+  padding:26px;
+  border-radius:12px;
+}
 
-    @media (max-width: 820px){
-      header{position:static}
-      .header-inner{flex-direction:column;align-items:flex-start}
-      nav{flex-wrap:wrap}
-      nav a{margin-left:0;margin-right:14px}
-      .lang{margin-left:0;margin-top:6px}
-      .brand{min-width:auto}
-      .logo{width:170px}
-    }
-  </style>
+.muted{color:var(--muted)}
+
+.section{
+  margin-top:18px;
+  padding-top:18px;
+  border-top:1px solid rgba(148,163,184,.18);
+}
+
+h1{margin:0 0 10px}
+h2{margin:0 0 8px}
+p{margin:0 0 12px}
+
+footer{
+  margin-top:40px;
+  padding:20px;
+  background:var(--header);
+  color:var(--muted);
+  text-align:center;
+}
+</style>
 </head>
+
 <body>
 
 <header>
   <div class="header-inner">
-    <div class="brand">
-      <img src="logo.png" alt="Mycological Solutions Ltd logo" class="logo">
-      <div class="tagline-wrap">
-        <div class="company">Mycological Solutions Ltd</div>
-        <div class="tagline">Evidence-based mycology • Applied research • Practical solutions</div>
-      </div>
-    </div>
+    <img src="logo.png" alt="Mycological Solutions Ltd logo" class="logo">
 
     <nav>
       <a href="index.html">Home</a>
@@ -67,34 +92,40 @@
       <a href="services.html">Services</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
-
-      <span class="lang">
-        <a class="active" href="https://mycologicalsolutions.com" title="English site">EN</a>
-        <a href="https://mycologicalsolutions.hu" title="Hungarian site">HU</a>
-      </span>
     </nav>
   </div>
 </header>
 
 <main class="container">
   <section class="card">
-    <h1>Products</h1>
-
-    <p>
-      Mycological Solutions Ltd is currently sourcing and evaluating products related to fungi and applied mycology.
-    </p>
-
-    <p>
-      We are particularly interested in products that support environmental restoration, sustainable practices, and environmentally responsible technologies.
-    </p>
-
-    <p>
-      This may include tools, materials, and solutions connected to fungal research, environmental monitoring, ecological restoration, and other innovative uses of fungi.
-    </p>
-
+    <h1>Services</h1>
     <p class="muted">
-      If you develop or distribute products related to fungi and environmental solutions and would like us to consider distributing or representing your product, please get in touch.
+      Mycological Solutions Ltd focuses on practical environmental mycology and fungal analysis across agricultural, aquatic, and environmental systems.
     </p>
+
+    <div class="section">
+      <h2>Biological Testing</h2>
+      <p>
+        Environmental fungal testing and analysis including soil, water, and agricultural systems.
+        Services include fungal community analysis, contamination investigation, and source tracing.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Toxicity Testing</h2>
+      <p>
+        Toxicity testing of water, soil, and fungal metabolites including mycotoxin analysis.
+        Testing is conducted in collaboration with accredited analytical laboratories.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Project-Based Consulting</h2>
+      <p>
+        Scientific consulting for projects involving fungal analysis, environmental microbiology, and sampling strategies.
+        Please contact us to discuss your project.
+      </p>
+    </div>
   </section>
 </main>
 
