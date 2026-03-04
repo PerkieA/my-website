@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — Mycological Solutions Ltd</title>
+<title>Mycological Solutions Ltd</title>
 
 <style>
 :root{
@@ -62,23 +62,49 @@ nav a:hover{
   padding:0 22px;
 }
 
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+}
+
 .card{
   background:var(--card);
-  padding:28px;
+  padding:22px;
   border-radius:12px;
 }
 
-.section{
-  margin-top:22px;
-  padding-top:18px;
-  border-top:1px solid rgba(148,163,184,.18);
+.hero{
+  grid-column:1 / -1;
 }
 
-h1{margin:0 0 12px}
-h2{margin:0 0 10px}
+.double{
+  grid-column:span 2;
+}
 
-p{
-  margin:0 0 14px;
+.button{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 16px;
+  background:var(--accent);
+  color:#052e16;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.card-link{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
+
+.card-link .card{
+  transition:transform .15s ease;
+}
+
+.card-link:hover .card{
+  transform:translateY(-3px);
 }
 
 footer{
@@ -89,6 +115,10 @@ footer{
   text-align:center;
 }
 
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr;}
+  .double{grid-column:span 1;}
+}
 </style>
 </head>
 
@@ -112,37 +142,69 @@ footer{
 
 <main class="container">
 
-<section class="card">
+<div class="grid">
 
-<h1>About Us</h1>
+<div class="card hero">
+<h1>Applied Environmental Mycology</h1>
 
 <p>
-Mycological Solutions Ltd is built on a simple principle: fungi hold some of the most powerful solutions for the environmental challenges we face today.
+Mycological Solutions Ltd provides fungal analysis and environmental testing for agricultural, aquatic, and environmental systems.
 </p>
 
 <p>
-We focus on applied environmental mycology and fungal analysis across agricultural, aquatic, and environmental systems. By studying fungal communities and their interactions with natural and human-influenced environments, we help uncover how fungi can be used to better understand, restore, and improve ecological systems.
+We help projects understand fungal communities, investigate contamination, and generate reliable biological insight for environmental monitoring and research.
 </p>
 
-<p>
-Our work supports projects that require reliable fungal testing, environmental analysis, and scientific interpretation, connecting laboratory research with practical environmental applications.
-</p>
-
-<div class="section">
-
-<h2>Our Approach</h2>
-
-<p>
-Fungi are fundamental drivers of ecological processes. They shape soil health, influence water systems, recycle nutrients, and interact with plants, microbes, and ecosystems in complex ways.
-</p>
-
-<p>
-At Mycological Solutions Ltd, we approach mycology as a practical tool for solving real environmental problems. Through careful analysis, clear methodology, and evidence-based interpretation, we aim to translate fungal science into knowledge that can support environmental restoration, sustainable practices, and innovative biological solutions.
-</p>
-
+<a class="button" href="contact.html">Contact Us</a>
 </div>
 
-</section>
+
+<a href="about.html" class="card-link">
+<div class="card">
+<h2>About</h2>
+<p>
+Learn about our mission and how fungi can support environmental understanding and restoration.
+</p>
+</div>
+</a>
+
+
+<a href="services.html" class="card-link">
+<div class="card">
+<h2>Services</h2>
+<p>
+Environmental fungal testing, toxicity analysis, and project-based scientific consulting.
+</p>
+</div>
+</a>
+
+
+<a href="products.html" class="card-link">
+<div class="card">
+<h2>Products</h2>
+<p>
+Fungi-related tools, technologies, and environmental solutions currently under evaluation.
+</p>
+</div>
+</a>
+
+
+<div class="card double">
+<h2>Applications</h2>
+<p>
+Agricultural systems · Aquatic environments · Environmental monitoring · Contamination investigation · Ecological restoration
+</p>
+</div>
+
+
+<div class="card">
+<h2>Get in touch</h2>
+<p>
+If you would like to discuss environmental testing, fungal analysis, or collaboration, please contact us.
+</p>
+</div>
+
+</div>
 
 </main>
 
