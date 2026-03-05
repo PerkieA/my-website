@@ -6,217 +6,227 @@
 <title>Mycological Solutions Ltd</title>
 
 <style>
-
 :root{
---bg:#0f172a;
---header:#111827;
---card:#1e293b;
---text:#f1f5f9;
---muted:#94a3b8;
---accent:#22c55e;
---max:1100px;
+  --bg:#0f172a;
+  --header:#111827;
+  --card:#1e293b;
+  --text:#f1f5f9;
+  --muted:#94a3b8;
+  --accent:#22c55e;
+  --max:1100px;
 }
 
 *{box-sizing:border-box}
 
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.6;
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
 }
 
 header{
-background:var(--header);
-padding:18px 22px;
+  background:var(--header);
+  padding:18px 22px;
 }
 
 .header-inner{
-max-width:var(--max);
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+  max-width:var(--max);
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-.logo{
-width:150px;
-}
+.logo{width:150px;}
 
 nav a{
-margin-left:20px;
-color:var(--muted);
-text-decoration:none;
-font-weight:600;
+  margin-left:20px;
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
 }
 
-nav a:hover{
-color:white;
-}
+nav a:hover{color:white;}
 
 .container{
-max-width:var(--max);
-margin:40px auto;
-padding:0 22px;
+  max-width:var(--max);
+  margin:40px auto;
+  padding:0 22px;
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
 .card{
-background:var(--card);
-padding:22px;
-border-radius:12px;
+  background:var(--card);
+  padding:22px;
+  border-radius:12px;
 }
 
-.hero{
-grid-column:1 / -1;
+/* New: pill/tag styling for Focus Areas */
+.pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:10px;
 }
 
-.row2{
-grid-column:span 1;
+.pill{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(148,163,184,0.12);
+  color:var(--text);
+  border:1px solid rgba(148,163,184,0.20);
+  font-size:14px;
+  line-height:1;
+  white-space:nowrap;
 }
 
-.row3{
-grid-column:span 1;
-}
-
-.double{
-grid-column:span 2;
-}
+.hero{grid-column:1 / -1;}
+.row2{grid-column:span 1;}
+.row3{grid-column:span 1;}
+.double{grid-column:span 2;}
 
 .button{
-display:inline-block;
-margin-top:10px;
-padding:10px 16px;
-background:var(--accent);
-color:#052e16;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 16px;
+  background:var(--accent);
+  color:#052e16;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 .card-link{
-text-decoration:none;
-color:inherit;
-display:block;
+  text-decoration:none;
+  color:inherit;
+  display:block;
 }
 
 .card-link:hover .card{
-transform:translateY(-3px);
-transition:.15s;
+  transform:translateY(-3px);
+  transition:.15s;
 }
 
 footer{
-margin-top:40px;
-padding:20px;
-background:var(--header);
-color:var(--muted);
-text-align:center;
+  margin-top:40px;
+  padding:20px;
+  background:var(--header);
+  color:var(--muted);
+  text-align:center;
 }
 
 @media(max-width:900px){
-
-.grid{
-grid-template-columns:1fr;
+  .grid{grid-template-columns:1fr;}
+  .double{grid-column:span 1;}
 }
-
-.double{
-grid-column:span 1;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="header-inner">
-
-<img src="logo.png" class="logo">
-
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="products.html">Products</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-</div>
+  <div class="header-inner">
+    <img src="logo.png" class="logo" alt="Mycological Solutions logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <div class="container">
+  <div class="grid">
 
-<div class="grid">
+    <div class="card hero">
+      <h1>Welcome</h1>
+      <p class="muted">Innovative fungal technologies for environmental resilience.</p>
 
-<div class="card hero">
-<h1>Welcome</h1>
-<p class="muted">Innovative fungal technologies for environmental resilience. </p>
+      <p>
+        Mycological Solutions Ltd develops fungal-based solutions for environmental and agricultural systems.
+        By integrating fungal ecology, laboratory science, and applied innovation, we address challenges in
+        soil health, water quality, and circular bioeconomy applications.
+      </p>
 
-<p>
-Mycological Solutions Ltd delivers fungal-based solutions for environmental, agricultural systems biotechnology. 
-By integrating fungal ecology, laboratory science, and applied innovation to address challenges in 
-soil health, water quality, and circular bioeconomy challenges.
-</p>
+      <!-- Added: strategic credibility statement -->
+      <p class="muted">
+        Founded by a researcher in environmental microbiology and fungal ecology, Mycological Solutions bridges
+        fundamental science and practical environmental innovation.
+      </p>
 
-<a class="button" href="contact.html">Contact Us</a>
-</div>
+      <a class="button" href="contact.html">Contact Us</a>
+    </div>
 
+    <!-- Added: Focus Areas (startup clarity section) -->
+    <div class="card hero">
+      <h2>Focus Areas</h2>
+      <p class="muted">Where we apply fungal science to generate measurable outcomes.</p>
+      <div class="pills">
+        <span class="pill">Soil health & nutrient cycling</span>
+        <span class="pill">Environmental fungal diagnostics</span>
+        <span class="pill">Water quality & aquatic systems</span>
+        <span class="pill">Circular bioeconomy & bioprocessing</span>
+        <span class="pill">Microbial community function</span>
+        <span class="pill">Decision support & predictive modelling</span>
+      </div>
+    </div>
 
-<a href="about.html" class="card-link">
-<div class="card row2">
-<h2>About</h2>
-<p>Scientific experties in fungal ecology and environmental microbiology. 
-Discover our research background, applied projects and technology development approach.</p>
-</div>
-</a>
+    <a href="about.html" class="card-link">
+      <div class="card row2">
+        <h2>About</h2>
+        <p>
+          Scientific expertise in fungal ecology and environmental microbiology.
+          Discover our research background, applied projects, and technology development approach.
+        </p>
+      </div>
+    </a>
 
+    <a href="services.html" class="card-link">
+      <div class="card row2">
+        <h2>Services</h2>
+        <p>
+          Environmental fungal diagnostics, microbial ecosystem analysis, and expert consulting for
+          agriculture, water systems, and environmental monitoring.
+        </p>
+      </div>
+    </a>
 
-<a href="services.html" class="card-link">
-<div class="card row2">
-<h2>Services</h2>
-<p>Environmental fungal diagnostics, microbial ecosystem analysis, and expert consulting for 
-agriculture, water systems and environmental monitoring.</p>
-</div>
-</a>
+    <a href="products.html" class="card-link">
+      <div class="card row2">
+        <h2>Products</h2>
+        <p>
+          Innovative fungal-based products supporting soil health, nutrient cycling, and sustainable environmental systems.
+        </p>
+      </div>
+    </a>
 
+    <div class="card double">
+      <h2>What we do</h2>
+      <p>
+        From idea → protocol → measurable results, with clear documentation and reproducible methods.
+      </p>
+    </div>
 
-<a href="products.html" class="card-link">
-<div class="card row2">
-<h2>Products</h2>
-<p>Innovative fungal-based products supporting soil health, nutrient cycling, and sustainable environmental systems .</p>
-</div>
-</a>
+    <div class="card row3">
+      <h2>Get in touch</h2>
+      <p>Tell us about your project and we can discuss how we may support it.</p>
+    </div>
 
-
-<div class="card double">
-<h2>What we do</h2>
-<p>
-From idea → protocol → measurable results, with clear documentation and reproducible methods.
-</p>
-</div>
-
-
-<div class="card row3">
-<h2>Get in touch</h2>
-<p>
-Tell us about your project and we can discuss how we may support it.
-</p>
-</div>
-
-</div>
-
+  </div>
 </div>
 
 <footer>
-© 2026 Mycological Solutions Ltd
+  © 2026 Mycological Solutions Ltd
 </footer>
 
 </body>
