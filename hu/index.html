@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mycological Solutions Ltd</title>
+
+<style>
+:root{
+  --bg:#0f172a;
+  --header:#111827;
+  --card:#1e293b;
+  --text:#f1f5f9;
+  --muted:#94a3b8;
+  --accent:#22c55e;
+  --max:1100px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+header{
+  background:var(--header);
+  padding:18px 22px;
+}
+
+.header-inner{
+  max-width:var(--max);
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{width:150px;height:auto;display:block;}
+
+nav a{
+  margin-left:20px;
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+}
+
+nav a:hover{color:white;}
+
+.container{
+  max-width:var(--max);
+  margin:40px auto;
+  padding:0 22px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  background:var(--card);
+  padding:22px;
+  border-radius:12px;
+}
+
+.hero{grid-column:1 / -1;}
+.row2{grid-column:span 1;}
+.row3{grid-column:span 1;}
+.double{grid-column:span 2;}
+
+.muted{color:var(--muted);}
+
+.button{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 16px;
+  background:var(--accent);
+  color:#052e16;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.card-link{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}
+
+.card-link .card{
+  transition:transform .15s ease;
+}
+
+.card-link:hover .card{
+  transform:translateY(-3px);
+}
+
+footer{
+  margin-top:40px;
+  padding:20px;
+  background:var(--header);
+  color:var(--muted);
+  text-align:center;
+}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr;}
+  .double{grid-column:span 1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="logo.png" class="logo" alt="Mycological Solutions logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card hero">
+      <h1>Welcome</h1>
+      <p class="muted">Innovative fungal science for environmental solutions.</p>
+
+      <p>
+        Mycological Solutions Ltd supports environmental and agricultural projects through applied mycology,
+        fungal analysis, and practical scientific interpretation.
+      </p>
+
+      <p>
+        We work across agricultural, aquatic, and environmental systems to help projects generate reliable biological insight,
+        investigate contamination, and support environmental monitoring and restoration.
+      </p>
+
+      <a class="button" href="contact.html">Contact Us</a>
+    </div>
+
+    <a href="about.html" class="card-link">
+      <div class="card row2">
+        <h2>About</h2>
+        <p>
+          Why we believe fungi hold powerful solutions for today’s environmental challenges — and how we apply mycology in practice.
+        </p>
+      </div>
+    </a>
+
+    <a href="services.html" class="card-link">
+      <div class="card row2">
+        <h2>Services</h2>
+        <p>
+          Biological testing, toxicity testing (with accredited labs), and project-based consulting for fungal and environmental work.
+        </p>
+      </div>
+    </a>
+
+    <a href="products.html" class="card-link">
+      <div class="card row2">
+        <h2>Products</h2>
+        <p>
+          We are currently sourcing fungi-related products and environmental solutions, and welcome partnership enquiries.
+        </p>
+      </div>
+    </a>
+
+    <div class="card double">
+      <h2>What we do</h2>
+      <p>
+        From question → sampling → analysis → interpretation, with clear documentation and practical outcomes.
+      </p>
+    </div>
+
+    <div class="card row3">
+      <h2>Get in touch</h2>
+      <p>Tell us about your project and we can discuss how we may support it.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 Mycological Solutions Ltd
+</footer>
+
+</body>
+</html>
