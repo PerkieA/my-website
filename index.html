@@ -39,7 +39,7 @@ header{
   align-items:center;
 }
 
-.logo{width:150px;}
+.logo{width:150px;height:auto;display:block;}
 
 nav a{
   margin-left:20px;
@@ -68,30 +68,12 @@ nav a:hover{color:white;}
   border-radius:12px;
 }
 
-/* New: pill/tag styling for Focus Areas */
-.pills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:10px;
-}
-
-.pill{
-  display:inline-block;
-  padding:8px 12px;
-  border-radius:999px;
-  background:rgba(148,163,184,0.12);
-  color:var(--text);
-  border:1px solid rgba(148,163,184,0.20);
-  font-size:14px;
-  line-height:1;
-  white-space:nowrap;
-}
-
 .hero{grid-column:1 / -1;}
 .row2{grid-column:span 1;}
 .row3{grid-column:span 1;}
 .double{grid-column:span 2;}
+
+.muted{color:var(--muted);}
 
 .button{
   display:inline-block;
@@ -110,9 +92,12 @@ nav a:hover{color:white;}
   display:block;
 }
 
+.card-link .card{
+  transition:transform .15s ease;
+}
+
 .card-link:hover .card{
   transform:translateY(-3px);
-  transition:.15s;
 }
 
 footer{
@@ -150,43 +135,26 @@ footer{
 
     <div class="card hero">
       <h1>Welcome</h1>
-      <p class="muted">Innovative fungal technologies for environmental resilience.</p>
+      <p class="muted">Innovative fungal science for environmental solutions.</p>
 
       <p>
-        Mycological Solutions Ltd develops fungal-based solutions for environmental and agricultural systems.
-        By integrating fungal ecology, laboratory science, and applied innovation, we address challenges in
-        soil health, water quality, and circular bioeconomy applications.
+        Mycological Solutions Ltd supports environmental and agricultural projects through applied mycology,
+        fungal analysis, and practical scientific interpretation.
       </p>
 
-      <!-- Added: strategic credibility statement -->
-      <p class="muted">
-        Founded by a researcher in environmental microbiology and fungal ecology, Mycological Solutions bridges
-        fundamental science and practical environmental innovation.
+      <p>
+        We work across agricultural, aquatic, and environmental systems to help projects generate reliable biological insight,
+        investigate contamination, and support environmental monitoring and restoration.
       </p>
 
       <a class="button" href="contact.html">Contact Us</a>
-    </div>
-
-    <!-- Added: Focus Areas (startup clarity section) -->
-    <div class="card hero">
-      <h2>Focus Areas</h2>
-      <p class="muted">Where we apply fungal science to generate measurable outcomes.</p>
-      <div class="pills">
-        <span class="pill">Soil health & nutrient cycling</span>
-        <span class="pill">Environmental fungal diagnostics</span>
-        <span class="pill">Water quality & aquatic systems</span>
-        <span class="pill">Circular bioeconomy & bioprocessing</span>
-        <span class="pill">Microbial community function</span>
-        <span class="pill">Decision support & predictive modelling</span>
-      </div>
     </div>
 
     <a href="about.html" class="card-link">
       <div class="card row2">
         <h2>About</h2>
         <p>
-          Scientific expertise in fungal ecology and environmental microbiology.
-          Discover our research background, applied projects, and technology development approach.
+          Why we believe fungi hold powerful solutions for today’s environmental challenges — and how we apply mycology in practice.
         </p>
       </div>
     </a>
@@ -195,8 +163,7 @@ footer{
       <div class="card row2">
         <h2>Services</h2>
         <p>
-          Environmental fungal diagnostics, microbial ecosystem analysis, and expert consulting for
-          agriculture, water systems, and environmental monitoring.
+          Biological testing, toxicity testing (with accredited labs), and project-based consulting for fungal and environmental work.
         </p>
       </div>
     </a>
@@ -205,7 +172,7 @@ footer{
       <div class="card row2">
         <h2>Products</h2>
         <p>
-          Innovative fungal-based products supporting soil health, nutrient cycling, and sustainable environmental systems.
+          We are currently sourcing fungi-related products and environmental solutions, and welcome partnership enquiries.
         </p>
       </div>
     </a>
@@ -213,7 +180,7 @@ footer{
     <div class="card double">
       <h2>What we do</h2>
       <p>
-        From idea → protocol → measurable results, with clear documentation and reproducible methods.
+        From question → sampling → analysis → interpretation, with clear documentation and practical outcomes.
       </p>
     </div>
 
