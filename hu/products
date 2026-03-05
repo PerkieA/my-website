@@ -1,1 +1,143 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termékek — Mycological Solutions Kft</title>
 
+<style>
+:root{
+  --bg:#0f172a;
+  --header:#111827;
+  --card:#1e293b;
+  --text:#f1f5f9;
+  --muted:#94a3b8;
+  --accent:#22c55e;
+  --max:1100px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+header{
+  background:var(--header);
+  padding:18px 22px;
+}
+
+.header-inner{
+  max-width:var(--max);
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  width:150px;
+  height:auto;
+  display:block;
+}
+
+nav a{
+  margin-left:20px;
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:white;
+}
+
+.container{
+  max-width:var(--max);
+  margin:40px auto;
+  padding:0 22px;
+}
+
+.card{
+  background:var(--card);
+  padding:26px;
+  border-radius:12px;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+h1{
+  margin:0 0 10px;
+}
+
+p{
+  margin:0 0 14px;
+}
+
+footer{
+  margin-top:40px;
+  padding:20px;
+  background:var(--header);
+  color:var(--muted);
+  text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-inner">
+
+<img src="../logo.png" alt="Mycological Solutions logó" class="logo">
+
+<nav>
+<a href="index.html">Főoldal</a>
+<a href="about.html">Rólunk</a>
+<a href="services.html">Szolgáltatások</a>
+<a href="products.html">Termékek</a>
+<a href="contact.html">Kapcsolat</a>
+</nav>
+
+</div>
+</header>
+
+<main class="container">
+
+<section class="card">
+
+<h1>Termékek</h1>
+
+<p class="muted">
+A Mycological Solutions Kft jelenleg gombákkal és alkalmazott mikológiával kapcsolatos termékeket keres és értékel.
+</p>
+
+<p>
+Különösen olyan megoldások iránt érdeklődünk, amelyek támogatják a környezeti helyreállítást, a fenntartható gyakorlatokat és a környezettudatos technológiákat.
+</p>
+
+<p>
+Ide tartozhatnak eszközök, anyagok és technológiák, amelyek kapcsolódnak a gombakutatáshoz, környezeti monitorozáshoz, ökológiai helyreállításhoz vagy a gombák egyéb innovatív alkalmazásaihoz.
+</p>
+
+<p>
+Amennyiben Ön gombákkal vagy környezeti megoldásokkal kapcsolatos termékeket fejleszt vagy forgalmaz, és szeretné, hogy a Mycological Solutions Kft megfontolja azok képviseletét vagy forgalmazását, kérjük vegye fel velünk a kapcsolatot.
+</p>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 Mycological Solutions Kft
+</footer>
+
+</body>
+</html>
