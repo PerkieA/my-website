@@ -1,1 +1,194 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rólunk — Mycological Solutions Kft</title>
 
+<style>
+:root{
+  --bg:#0f172a;
+  --header:#111827;
+  --card:#1e293b;
+  --text:#f1f5f9;
+  --muted:#94a3b8;
+  --accent:#22c55e;
+  --max:1100px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+header{
+  background:var(--header);
+  padding:18px 22px;
+}
+
+.header-inner{
+  max-width:var(--max);
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  width:150px;
+  height:auto;
+  display:block;
+}
+
+nav a{
+  margin-left:20px;
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:white;
+}
+
+.container{
+  max-width:var(--max);
+  margin:40px auto;
+  padding:0 22px;
+}
+
+.card{
+  background:var(--card);
+  padding:28px;
+  border-radius:12px;
+}
+
+.section{
+  margin-top:28px;
+  padding-top:20px;
+  border-top:1px solid rgba(148,163,184,.18);
+}
+
+h1{margin-top:0;}
+h2{margin-top:0;}
+
+ul{
+  margin-top:10px;
+  padding-left:18px;
+}
+
+li{margin-bottom:6px;}
+
+a{color:var(--accent);}
+
+footer{
+  margin-top:40px;
+  padding:20px;
+  background:var(--header);
+  color:var(--muted);
+  text-align:center;
+}
+
+@media(max-width:900px){
+  .header-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  nav{margin-top:10px;}
+  nav a{
+    margin-left:0;
+    margin-right:16px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <!-- If this file is inside /hu/, use ../logo.png instead of logo.png -->
+    <img src="../logo.png" alt="Mycological Solutions logó" class="logo">
+
+    <nav>
+      <a href="index.html">Főoldal</a>
+      <a href="about.html">Rólunk</a>
+      <a href="services.html">Szolgáltatások</a>
+      <a href="products.html">Termékek</a>
+      <a href="contact.html">Kapcsolat</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="container">
+  <div class="card">
+
+    <h1>Rólunk</h1>
+
+    <p>
+      A Mycological Solutions Kft 2025-ben alakult, azzal a céllal, hogy alkalmazott környezeti mikológiai megközelítéssel és
+      gombaelemzésekkel támogassa a mezőgazdasági, vízi és egyéb környezeti rendszerek vizsgálatát.
+    </p>
+
+    <p>
+      A vállalkozás azért jött létre, hogy a gombaökológiai kutatásokból származó tudományos ismereteket gyakorlati eszközökké
+      és módszerekké alakítsa környezeti monitorozás, szennyezésvizsgálat és ökoszisztéma-elemzés céljára. A gombák kulcsszerepet
+      töltenek be a tápanyagkörforgásban, a talaj egészségében és a vízi ökoszisztémák működésében, ugyanakkor ökológiai
+      funkcióik ma még sokszor alulhasznosítottak a környezeti állapotfelmérésben és a kezelésben.
+    </p>
+
+    <p>
+      A Mycological Solutions olyan projektekben működik közre, ahol megbízható gombavizsgálatokra, biológiai értelmezésre és
+      környezeti elemzésre van szükség. Laboratóriumi módszerek, környezeti mintavétel és tudományos interpretáció kombinálásával
+      célunk olyan értelmezhető biológiai információt szolgáltatni, amely támogatja a kutatást, a környezeti monitorozást és a
+      fenntartható ökoszisztéma-menedzsmentet.
+    </p>
+
+    <p>
+      A vállalkozás erős környezeti mikrobiológiai és gombaökológiai kutatási háttérre épül.
+    </p>
+
+    <div class="section">
+      <h2>Fókuszterületeink</h2>
+      <p>Alkalmazott gombászati megoldások az alábbi területeken:</p>
+
+      <ul>
+        <li>Környezeti monitorozás</li>
+        <li>Mezőgazdasági rendszerek</li>
+        <li>Vízrendszerek és vízi ökoszisztémák</li>
+        <li>Szennyezésvizsgálat és forrásfeltárás</li>
+        <li>Ökológiai helyreállítás</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Kutatás és publikációk</h2>
+
+      <p>
+        A Mycological Solutions mögötti tudományos háttér az alábbi kutatói profilon keresztül tekinthető meg:
+      </p>
+
+      <p>
+        <a href="https://scholar.google.com/citations?hl=en&user=tiBkWE8AAAAJ&view_op=list_works&gmla=AF9nlQtFQYxlej_FCVYL8AKJ0GoeGvMtCMPBPtTsFLGzTSWbffcOyHImfp2qmrcIvkZbSUvbWqJGf5BUzYbYZ0ad"
+           target="_blank" rel="noopener">
+          Publikációk megtekintése a Google Scholaron
+        </a>
+      </p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 Mycological Solutions Kft
+</footer>
+
+</body>
+</html>
